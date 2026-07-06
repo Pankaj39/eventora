@@ -1,1 +1,193 @@
+/* ==========================
+   EVENTORA - LUXURY THEME
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#090909;
+    color:#fff;
+}
+
+/* Navbar */
+
+.navbar{
+
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:fixed;
+    top:0;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+}
+
+.logo{
+
+    font-size:32px;
+    color:#D4AF37;
+    font-family:'Cinzel',serif;
+    font-weight:bold;
+    letter-spacing:2px;
+
+}
+
+.navbar ul{
+
+display:flex;
+list-style:none;
+gap:35px;
+
+}
+
+.navbar a{
+
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:.3s;
+
+}
+
+.navbar a:hover{
+
+color:#D4AF37;
+
+}
+
+
+/* Hero Section */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+font-family:'Cinzel',serif;
+line-height:1.2;
+
+}
+
+.hero span{
+
+color:#D4AF37;
+
+}
+
+.hero p{
+
+margin-top:20px;
+
+font-size:22px;
+
+color:#ddd;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:15px 40px;
+
+background:#D4AF37;
+
+color:#111;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:translateY(-4px);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:15px 20px;
+flex-direction:column;
+
+}
+
+.navbar ul{
+
+margin-top:15px;
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
