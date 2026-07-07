@@ -174,25 +174,11 @@ transform:translateY(-4px);
 }
 
 .menu-toggle{
-    display:none;
-    color:#D4AF37;
-    font-size:30px;
-    cursor:pointer;
+    display:block;
 }
 
 .navbar ul{
     display:none;
-    position:absolute;
-    top:70px;
-    left:5%;
-    width:90%;
-    background:#111;
-    border:1px solid rgba(212,175,55,.3);
-    border-radius:15px;
-    padding:20px 0;
-    flex-direction:column;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
 
 .navbar ul.active{
@@ -223,6 +209,11 @@ transform:translateY(-4px);
     font-size:34px;
 }
 
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
 }
 /* ================= ABOUT ================= */
 
