@@ -1,1 +1,147 @@
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
 
+@media (max-width:992px){
+
+.navbar{
+padding:20px 5%;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.container{
+flex-direction:column;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.navbar{
+
+padding:18px 5%;
+
+}
+
+.navbar ul{
+
+position:absolute;
+top:80px;
+left:-100%;
+width:100%;
+background:#111;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:30px 0;
+transition:.4s;
+
+}
+
+.navbar ul.active{
+
+left:0;
+
+}
+
+.navbar ul li{
+
+margin:15px 0;
+
+}
+
+.hero{
+
+padding:0 20px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.heading h2{
+
+font-size:34px;
+
+}
+
+.about{
+
+padding:70px 20px;
+
+}
+
+.services{
+
+padding:70px 20px;
+
+}
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+flex-direction:column;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.logo{
+
+font-size:28px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.btn{
+
+padding:15px 28px;
+
+}
+
+.about-content h2{
+
+font-size:30px;
+
+}
+
+.heading h2{
+
+font-size:28px;
+
+}
+
+}
